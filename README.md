@@ -2,7 +2,7 @@
 
 Мобільна сторінка для салону **Beauty 1010** (Kleeblattgasse 11, 1010 Wien). Клієнт сканує QR-код у салоні й бачить привітання та подарунковий купон на 10 %. Звідти він одразу переходить на запис у Treatwell.
 
-- **Жива адреса:** https://zwolfros-debug.github.io/beauty1010/
+- **Жива адреса:** https://beauty1010.github.io/
 - Мова сторінки для клієнтів: **лише німецька**.
 - Без cookies, аналітики, форм і збору даних. Шрифти лежать на самому сайті (без Google Fonts).
 
@@ -58,8 +58,8 @@ conditions: [],               // ['Nicht mit anderen Aktionen kombinierbar.']
 
 ### Власний домен (якщо колись буде, наприклад `beauty1010.at`)
 1. У налаштуваннях репозиторію відкрити GitHub → Settings → Pages → Custom domain і вписати домен.
-2. У реєстратора домену додати запис CNAME `www` → `zwolfros-debug.github.io`.
-3. У `vite.config.ts` змінити `base` на `'/'`, а в `brand.ts` змінити `publicUrl`.
+2. У реєстратора домену додати запис CNAME `www` → `beauty1010.github.io`.
+3. У `brand.ts` змінити `publicUrl`.
 4. ⚠️ Новий домен означає **новий QR-код** (`npm run qr && npm run print`), і картки треба передрукувати. Щоб старі картки працювали й далі, сторінку на github.io треба лишити як переадресацію.
 
 ## Перевірки

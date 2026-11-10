@@ -10,7 +10,7 @@
     "qr": "node scripts/make-qr.mjs",
     "print": "node scripts/make-print.mjs",
     "test:qr": "node scripts/test-qr.mjs",
-    "deploy": "npm run build && cd dist && touch .nojekyll && rm -rf .git && git init -q -b gh-pages && git add -A && git commit -q -m deploy && git push -f https://github.com/zwolfros-debug/beauty1010.git gh-pages && rm -rf .git"
+    "deploy": "npm run build && cd dist && touch .nojekyll && rm -rf .git && git init -q -b gh-pages && git add -A && git commit -q -m deploy && git push -f https://github.com/beauty1010/beauty1010.github.io.git gh-pages && rm -rf .git"
   },
   "dependencies": {
     "@fontsource/cormorant-garamond": "^5.3.0",

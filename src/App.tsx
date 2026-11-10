@@ -206,15 +206,33 @@ export default function App() {
 
         {/* ───────── BUCHEN ───────── */}
         <section className="book" aria-labelledby="book-title">
-          <h2 id="book-title" className="sr-only">
-            Termin buchen
-          </h2>
-          <div data-reveal>
-            <BookButton>Jetzt Termin buchen</BookButton>
+          <figure className="book__photo" data-reveal>
+            <picture>
+              <source
+                type="image/webp"
+                srcSet={`${base}img/hands-white-640.webp 640w, ${base}img/hands-white-918.webp 918w`}
+                sizes="(min-width: 900px) 440px, 100vw"
+              />
+              <img
+                src={`${base}img/hands-white-918.jpg`}
+                alt="Gepflegte Hände mit cremeweißer Maniküre von Beauty 1010"
+                width={918}
+                height={1148}
+                loading="lazy"
+              />
+            </picture>
+          </figure>
+          <div className="book__text">
+            <h2 id="book-title" className="book__title" data-reveal>
+              Dein Moment bei uns
+            </h2>
+            <p className="book__note" data-reveal>
+              Sichere dir deinen Wunschtermin ganz einfach online.
+            </p>
+            <div data-reveal>
+              <BookButton>Jetzt Termin buchen</BookButton>
+            </div>
           </div>
-          <p className="book__note" data-reveal>
-            Sichere dir deinen Wunschtermin ganz einfach online.
-          </p>
         </section>
 
         {/* ───────── SALON ───────── */}
@@ -271,7 +289,7 @@ export default function App() {
       </main>
 
       <footer className="footer">
-        <Logo size={56} color="var(--graphite)" />
+        <p className="footer__name">Beauty 1010</p>
         <p className="footer__addr">
           {brand.salonName} · {brand.address.street} · {brand.address.zip} {brand.address.city}
         </p>

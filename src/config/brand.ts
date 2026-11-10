@@ -13,7 +13,7 @@ export const brand = {
   salonName: 'Beauty 1010',
 
   /** Öffentliche Adresse der Landingpage. Der QR-Code zeigt hierhin. */
-  publicUrl: 'https://zwolfros-debug.github.io/beauty1010/',
+  publicUrl: 'https://beauty1010.github.io/',
 
   /** Offizielle Buchungsseite (Treatwell). */
   bookingUrl: 'https://www.treatwell.at/ort/beauty-1010/',
