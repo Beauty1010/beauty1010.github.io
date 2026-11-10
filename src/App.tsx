@@ -140,9 +140,6 @@ export default function App() {
           <Logo size={132} color="var(--graphite)" disc="var(--sage)" />
         </div>
         <div className="hero__copy">
-          <p className="eyebrow" data-reveal>
-            Kleeblattgasse 11 · Wien
-          </p>
           <h1 data-reveal>
             Willkommen bei <span className="nowrap">Beauty 1010</span>
           </h1>
@@ -152,35 +149,33 @@ export default function App() {
           <p className="body" data-reveal>
             Gönn dir eine kleine Auszeit und entdecke unsere Beauty-Behandlungen im Herzen von Wien.
           </p>
-          <a className="scroll-cue" href="#angebot" data-reveal>
-            <span>Dein Geschenk</span>
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M12 5v14M6 13l6 6 6-6" fill="none" stroke="currentColor" strokeWidth="1.3" />
-            </svg>
-          </a>
+          <div className="hero__actions" data-reveal>
+            <a className="btn btn--solid" href="#angebot">
+              Dein {percentLabel} Gutschein
+              <svg className="btn__arrow btn__arrow--down" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 5v13M6 12l6 6 6-6" fill="none" stroke="currentColor" strokeWidth="1.5" />
+              </svg>
+            </a>
+            <a className="link" href={brand.bookingUrl} target="_blank" rel="noopener">
+              Direkt Termin buchen
+            </a>
+          </div>
         </div>
       </header>
 
       <main>
         {/* ───────── ANGEBOT ───────── */}
         <section className="offer" id="angebot" aria-labelledby="offer-title">
-          <p className="eyebrow eyebrow--center" data-reveal>
-            {offer.eyebrow}
-          </p>
           <h2 id="offer-title" className="offer__title" data-reveal>
-            {percentLabel} Rabatt
+            {offer.eyebrow}
           </h2>
           <p className="offer__sub" data-reveal>
-            {offer.scope}
+            {offer.thanks}
           </p>
 
           <div className="offer__card" data-reveal>
             <Coupon />
           </div>
-
-          <p className="offer__thanks" data-reveal>
-            {offer.thanks}
-          </p>
 
           <div className="coupon-actions" data-reveal>
             <button className="btn btn--outline btn--block" onClick={() => setShowCoupon(true)}>
@@ -251,12 +246,8 @@ export default function App() {
             )}
             {brand.rating && (
               <p className="rating">
-                <span className="rating__stars" aria-hidden="true">
-                  ★★★★★
-                </span>
-                <span>
-                  <strong>{brand.rating.value}</strong> von 5 · {brand.rating.count} Bewertungen auf {brand.rating.source}
-                </span>
+                <strong>{brand.rating.value}</strong> von 5 Sternen auf {brand.rating.source}
+                <span>{brand.rating.count} Bewertungen</span>
               </p>
             )}
             <a className="btn btn--outline" href={brand.address.mapsUrl} target="_blank" rel="noopener">

@@ -5,7 +5,7 @@ import { Logo } from './Logo';
 export function Coupon({ large = false }: { large?: boolean }) {
   return (
     <div className={`coupon${large ? ' coupon--large' : ''}`} aria-label={`Gutschein: ${percentLabel} Rabatt ${offer.scope}`}>
-      <div className="coupon__inner">
+      <div className="coupon__inner" data-artifact="voucher">
         <div className="coupon__top">
           <Logo size={large ? 64 : 52} color="var(--graphite)" />
           <span className="coupon__kicker">{offer.voucherTitle}</span>

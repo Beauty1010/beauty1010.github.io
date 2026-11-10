@@ -44,7 +44,7 @@ export const brand = {
     graphite: '#232B30', // Logo-Linien, Schrift, Beschilderung
     sage: '#9AA9A9', // Logo-Hintergrund (Instagram-Profil)
     sageDeep: '#5F6F70', // Akzent für Text auf hellem Grund
-    stone: '#F5F3EF', // Seitenhintergrund (Wände, Marmorboden)
+    stone: '#F3F3F0', // Seitenhintergrund (weiße Wände, Marmorboden)
     nude: '#E8D8CE', // Nude-Töne der Nageldesigns
     white: '#FFFFFF',
   },
