@@ -1,0 +1,11 @@
+
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" >
+  <circle cx="120" cy="120" r="120" fill="#9AA9A9"/>
+  <g fill="none" stroke="#232B30" stroke-width="3" stroke-linecap="square">
+    <path d="M38.5 46 V184.5"/><path d="M38.5 46 H204 V196 H172"/>
+  </g>
+  <g fill="#232B30" font-family="Jost, sans-serif" font-weight="400">
+    <text x="186" y="151" font-size="22" text-anchor="end" letter-spacing="0.5">1010</text>
+    <text x="33" y="185" font-size="37" textLength="155" lengthAdjust="spacing">BEAUTY</text>
+  </g>
+</svg>
