@@ -206,22 +206,6 @@ export default function App() {
 
         {/* ───────── BUCHEN ───────── */}
         <section className="book" aria-labelledby="book-title">
-          <figure className="book__photo" data-reveal>
-            <picture>
-              <source
-                type="image/webp"
-                srcSet={`${base}img/hands-white-640.webp 640w, ${base}img/hands-white-918.webp 918w`}
-                sizes="(min-width: 900px) 440px, 100vw"
-              />
-              <img
-                src={`${base}img/hands-white-918.jpg`}
-                alt="Gepflegte Hände mit cremeweißer Maniküre von Beauty 1010"
-                width={918}
-                height={1148}
-                loading="lazy"
-              />
-            </picture>
-          </figure>
           <div className="book__text">
             <h2 id="book-title" className="book__title" data-reveal>
               Dein Moment bei uns
@@ -239,8 +223,18 @@ export default function App() {
         <section className="salon" aria-labelledby="salon-title">
           <div className="salon__photo" data-reveal>
             <picture>
-              <source type="image/webp" srcSet={img('nails-nude').srcSet} sizes="(min-width: 900px) 460px, 100vw" />
-              <img src={img('nails-nude').src} alt="Nude-Maniküre von Beauty 1010" loading="lazy" />
+              <source
+                type="image/webp"
+                srcSet={`${base}img/hands-white-640.webp 640w, ${base}img/hands-white-918.webp 918w`}
+                sizes="(min-width: 860px) 560px, 100vw"
+              />
+              <img
+                src={`${base}img/hands-white-918.jpg`}
+                alt="Gepflegte Hände mit cremeweißer Maniküre von Beauty 1010"
+                width={918}
+                height={1148}
+                loading="lazy"
+              />
             </picture>
           </div>
           <div className="salon__info" data-reveal>
